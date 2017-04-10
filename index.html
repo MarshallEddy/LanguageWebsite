@@ -8,7 +8,7 @@
   <link href="style.css" rel="stylesheet">
 </head>
 
-<body>
+<body>  
   <div class="header">
     <div class="container">
       <a href="index.html" class="logo-icon">
@@ -21,17 +21,60 @@
         <li><a href="installation.html">Installation</a></li>
         <li><a href="examples.html">Example</a></li>
         <li><a href="comparisions.html">Comparisions</a></li>
+ 
+        
+  <style>      
+    .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+} 
+        
+  </style>      
         <li class="dropdown">
           <button class="dropbtn">More</button>
-          <ul cla ss="dropdown-content">
-            <li><a href="#">Community</a></li>
-            <li><a href="#">Our Blog</a></li>
-            <li><a href="#">Maps Blog</a></li>
-            <li><a href="#">Eng Blog</a></li>
-            <li><a href="#">Advertisers</a></li>
-            <li><a href="#">Publishers</a></li>
-            <li><a href="#">About Us</a></li>
+          <ul class="dropdown-content">
+            <a href="#">Community</a>
+            <a href="#">Our Blog</a>
+            <a href="#">Maps Blog</a>
+            <a href="#">Eng Blog</a>
+            <a href="#">Advertisers</a>
+            <a href="#">Publishers</a>
+            <a href="#">About Us</a>
           </ul>
         </li>
       </ul>
